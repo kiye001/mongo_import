@@ -1,0 +1,30 @@
+{
+    "app": {
+        "app_name": "mongo_import",
+		"log_level": "10",
+		"formatter": "%(asctime)s :: %(levelname)s :: %(message)s"
+    },
+	"excel" : {
+		"dir_name" : "data",
+		"file_name" : "Online Retail.xlsx"
+	},
+	"mongo":{
+		"url":"TO_DEFINE",
+		"port" : "TO_DEFINE",
+		"database": "MY_DB",
+		"collection" : "MY_COLL"
+	},	
+	"spark" : {
+		"app_name":"Mongo Import",
+		"data_format":"mongodb",
+		"write_mode":"overwrite"
+	},
+	"out" : {
+		"coll1" : "invoices",
+		"coll2" : "products_sold",
+		"coll3" : "customer_expenses",
+		"coll4" : "ratio_price_quantity_invoice",
+		"coll5" : "distribution_product_country",
+		"coll6" : "distribution_prices"
+	}
+}

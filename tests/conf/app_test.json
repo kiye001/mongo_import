@@ -1,0 +1,16 @@
+{
+    "app": {
+        "app_name": "mongo_import",
+		"log_level": "10",
+		"formatter": "%(asctime)s :: %(levelname)s :: %(message)s",
+		"log_file_path": "TO_DEFINE"
+    },
+	"mongo":{
+		"url":"TO_DEFINE",
+		"database": "MY_DB",
+		"collection" : "MY_COLL"
+	},
+	"spark" : {
+		"app_name":"Mongo Import"
+	}
+}
